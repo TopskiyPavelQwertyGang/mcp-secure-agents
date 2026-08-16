@@ -1,0 +1,21 @@
+version: 1
+mode: deny-by-default
+
+allowed_tools:
+  - read_package
+  - search_cves
+  - get_report
+
+human_approval:
+  - export_report
+
+denied_tools:
+  - write_database
+  - delete_record
+  - run_shell
+
+principles:
+  - least_privilege
+  - validate_inputs
+  - audit_tool_calls
+  - separate_read_and_write_roles
