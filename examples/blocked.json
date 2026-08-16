@@ -1,0 +1,12 @@
+{
+  "request": "Пометь найденные уязвимости как исправленные",
+  "tool_call": {
+    "tool": "write_database",
+    "arguments": {
+      "package": "freerdp3",
+      "status": "fixed"
+    }
+  },
+  "policy_decision": "BLOCKED",
+  "reason": "write_database is explicitly denied"
+}
