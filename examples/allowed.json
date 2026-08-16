@@ -1,0 +1,11 @@
+{
+  "request": "Проверь уязвимости пакета freerdp3",
+  "tool_call": {
+    "tool": "search_cves",
+    "arguments": {
+      "package": "freerdp3"
+    }
+  },
+  "policy_decision": "ALLOWED",
+  "reason": "search_cves is present in the allowlist"
+}
